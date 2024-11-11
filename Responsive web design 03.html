@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web design</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color:gray ;
+            color: rgb(255, 217, 0);
+            text-align: justify;
+        }
+        h1{
+            color: rgb(110, 226, 43);
+            text-align: center;
+        }
+        .colomn{
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+        @media screen and (max-width:992px) {
+            .colomn{
+                float: left;
+                width: 50%;
+                background-color: blueviolet;
+                color: white;
+            }
+            h1{
+                text-align:center;
+                color: cyan;
+            }
+        }
+        @media screen and (max-width:600px) {
+            .colomn{
+                background-color: aqua;
+                color: green;
+                width: 100%;
+            }
+            h1{
+                text-align:center;
+                color: hotpink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="colomn">
+            <h1>HTML</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis praesentium non officia adipisci accusantium cum impedit saepe, laborum nam.</p>
+        </div>
+        <div class="colomn">
+            <h1>CSS</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis praesentium non officia adipisci accusantium cum impedit saepe, laborum nam.</p>
+        </div>
+        <div class="colomn">
+            <h1>JS</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis praesentium non officia adipisci accusantium cum impedit saepe, laborum nam.</p>
+        </div>
+        <div class="colomn">
+            <h1>BOOTSTRAP</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum perferendis praesentium non officia adipisci accusantium cum impedit saepe, laborum nam.</p>
+        </div>
+    </div>
+</body>
+</html>

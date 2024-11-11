@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web design </title>
+    <style>
+        .naveber{
+                background-color: darkkhaki;
+                display: flex;
+                justify-content: right;
+        }
+        .naveber a{
+            text-decoration: none;
+            padding: 25px;
+            color: blue;
+            
+        }
+        .naveber a:hover{
+            background-color:chocolate;
+            
+        }
+        @media screen and (max-width:600px) {
+            .naveber{
+                flex-direction: column;
+                padding: 20px;
+            }
+            .naveber a{
+                background-color: blueviolet;
+                margin: 20px 0;
+                border-radius: 20px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="naveber">
+        <a href="#"> Home </a>
+        <a href="#"> Contact Me </a>
+        <a href="#"> Tutorial </a>
+        <a href="#"> About Me </a>
+    </div>
+</body>
+</html>
